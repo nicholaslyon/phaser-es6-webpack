@@ -1,6 +1,5 @@
 {
   "parser": "babel-eslint",
-  "extends": "standard",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
@@ -8,8 +7,17 @@
   "env": {
     "browser": true
   },
+  "extends": "airbnb-base",
   "rules": {
-    "import/no-unresolved": [2]
+    "arrow-body-style": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "max-len": 0,
+    "no-console": 0,
+    "quote-props": ["error", "consistent-as-needed"],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": "always",
+      "ObjectPattern": { "multiline": true }
+    }]
   },
   "globals": {
     "phaser": true
